@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            position: relative;
+        }
+        .top-container {
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .list-wrap {
+            padding: 20px;
+            background: #c7e0fa;
+        }
+        li:after {
+            content: "";
+            position: absolute;
+            top: 356px;
+            width: 278.4px;
+            height: 20px;
+            background: #c7e0fa;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1.333%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            height: 280px;
+        }
+        li:nth-child(1)  {
+            background: url(images/img-1.jpg) no-repeat;
+            background-size: cover;
+        }
+        li:nth-child(2)  {
+            background: url(images/img-2.jpg) no-repeat;
+            background-size: cover;
+        }
+        li:nth-child(3)  {
+            background: url(images/img-3.jpg) no-repeat;
+            background-size: cover;
+        }
+        li:nth-child(4)  {
+            background: url(images/img-4.jpg) no-repeat;
+            background-size: cover;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        h3, .content-wrap > p, .btn{
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            background: rgba(0,0,0,0.5);
+        }
+        p {
+            height: 108px;
+        }
+        .btn > span {
+            padding: 8px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #000;
+            background: #fff;
+            border-radius: 20px;
+        }
+        @media (min-width: 768px) {
+            ul {
+                flex-direction: row;
+            }
+            ul li {
+                flex: 0 0 24%;
+            }
+            /* ここからアニメーションのスタイル */
+            .content-wrap {
+                transition: all .6s ease-in-out .3s;
+                padding-top: 210px;
+            }
+            .content-wrap:hover{
+                padding-top: 0;
+            }
+        }
+        .btm-container {
+            position: absolute;
+            margin: 0 auto;
+            padding: 2rem;
+            top: 500;
+            height: 300px;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-container">
+        <h2>タイトル</h2>
+        <div class="list-wrap">
+            <ul>
+                <li><a href="#">
+                    <div class="content-wrap">
+                        <h3>タイトル</h3>
+                        <p>コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。</p>
+                        <div class="btn"><span>＞</span></div>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="content-wrap">
+                        <h3>タイトル</h3>
+                        <p>コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテ</p>
+                        <div class="btn"><span>＞</span></div>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="content-wrap">
+                        <h3>タイトル</h3>
+                        <p>コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテン</p>
+                        <div class="btn"><span>＞</span></div>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="content-wrap">
+                        <h3>タイトル</h3>
+                        <p>コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。</p>
+                        <div class="btn"><span>＞</span></div>
+                    </div>
+                </a></li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="btm-container">
+        <p>コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。コンテンツです。</p>
+    </div>
+</body>
+</html>
