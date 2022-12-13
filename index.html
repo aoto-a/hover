@@ -8,34 +8,22 @@
     <style>
         body {
             margin: 0;
+            padding: 20px;
             position: relative;
         }
         .top-container {
             margin: 0 auto;
             max-width: 1200px;
         }
-        .list-wrap {
-            padding: 20px;
-            background: #c7e0fa;
-        }
-        li:after {
-            content: "";
-            position: absolute;
-            top: 356px;
-            width: 278.4px;
-            height: 20px;
-            background: #c7e0fa;
-        }
+ 
         ul {
-            display: flex;
-            flex-direction: column;
-            gap: 1.333%;
             margin: 0;
             padding: 0;
             list-style: none;
         }
         li {
-            height: 280px;
+            margin-bottom: 20px;
+            height: 285px;
         }
         li:nth-child(1)  {
             background: url(images/img-1.jpg) no-repeat;
@@ -76,10 +64,12 @@
         }
         @media (min-width: 768px) {
             ul {
-                flex-direction: row;
+                display: flex;
+                gap: 1.333%;
             }
             ul li {
                 flex: 0 0 24%;
+                margin-bottom: 0;
             }
             /* ここからアニメーションのスタイル */
             .content-wrap {
@@ -89,6 +79,7 @@
             .content-wrap:hover{
                 padding-top: 0;
             }
+            /* ここまでアニメーションのスタイル */
         }
         .btm-container {
             position: absolute;
